@@ -1,0 +1,15 @@
+[
+   { 
+      "Name": "hcompute",
+      "ActionOnFailure": "CONTINUE",
+      "HadoopJarStep": 
+      { 
+         "MainClass": "neu.cs.parallelprogramming.flightanalyzer.HCompute",
+         "Jar": "s3n://cs6240neu/Secondary.jar",
+         "Args": 
+         [
+             "s3://cs6240neu/outputhw4m6/"
+         ] 
+      } 
+   } 
+]

@@ -1,0 +1,16 @@
+[
+   { 
+      "Name": "average delay for each airline in 2008",
+      "ActionOnFailure": "CONTINUE",
+      "HadoopJarStep": 
+      { 
+         "MainClass": "neu.cs.parallelprogramming.flightanalyzer.Secondary",
+         "Jar": "s3n://cs6240neu/Secondary.jar",
+         "Args": 
+         [ 
+             "s3://cs6240neu/input/data.csv",
+             "s3://cs6240neu/outputhw46machines/"
+         ] 
+      } 
+   } 
+]

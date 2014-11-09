@@ -1,0 +1,16 @@
+[
+   { 
+      "Name": "Word count no combiner example",
+      "ActionOnFailure": "CONTINUE", 
+      "HadoopJarStep": 
+      { 
+         "MainClass": "neu.cs.parallelprogramming.nocombiner.WordCountNoCombiner",
+         "Jar": "s3n://cs6240neu-bucket/WordCount.jar",
+         "Args": 
+         [ 
+             "s3://cs6240neu-bucket/input/hw1.txt",
+             "s3://cs6240neu-bucket/outputhw2/conf2/run1/"
+         ] 
+      } 
+   } 
+]

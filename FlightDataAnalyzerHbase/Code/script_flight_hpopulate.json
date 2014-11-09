@@ -1,0 +1,15 @@
+[
+   { 
+      "Name": "hpopulate",
+      "ActionOnFailure": "CONTINUE",
+      "HadoopJarStep": 
+      { 
+         "MainClass": "neu.cs.parallelprogramming.flightanalyzer.HPopulate",
+         "Jar": "s3n://cs6240neu/Secondary.jar",
+         "Args": 
+         [ 
+             "s3://cs6240neu/input/data.csv"
+         ] 
+      } 
+   } 
+]

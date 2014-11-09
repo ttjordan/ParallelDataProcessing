@@ -1,0 +1,16 @@
+[
+   { 
+      "Name": "Word count example", 
+      "ActionOnFailure": "CONTINUE", 
+      "HadoopJarStep": 
+      { 
+         "MainClass": "neu.cs.parallelprogramming.WordCount",
+         "Jar": "s3n://cs6240neu/WordCount.jar", 
+         "Args": 
+         [ 
+             "s3://cs6240neu/input/hw1.txt", 
+             "s3://cs6240neu/outputhw1/"
+         ] 
+      } 
+   } 
+]

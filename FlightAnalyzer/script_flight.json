@@ -1,0 +1,16 @@
+[
+   { 
+      "Name": "average delay for flight data",
+      "ActionOnFailure": "CONTINUE",
+      "HadoopJarStep": 
+      { 
+         "MainClass": "neu.cs.parallelprogramming.flightanalyzer.FlightAnalyzer",
+         "Jar": "s3n://cs6240pprog/FlightAnalyzer.jar",
+         "Args": 
+         [ 
+             "s3://cs6240pprog/input/data.csv",
+             "s3://cs6240pprog/outputhw3/"
+         ] 
+      } 
+   } 
+]
